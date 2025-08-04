@@ -1,4 +1,3 @@
-# Code Review Website
 
 # Code Review Website
 
@@ -28,7 +27,7 @@ A web application that allows users to input code and receive AI-powered code re
 #### 1. Clone the repository
 
 ```sh
-git clone <repo-url>
+git clone [<repo-url>](https://github.com/shreyachaurasia0/CodeReview)
 cd CodeReview
 ```
 
