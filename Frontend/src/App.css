@@ -1,0 +1,219 @@
+/* Reset & base layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  font-family: 'Fira Code', monospace;
+}
+
+/* Main layout */
+main {
+  height: 100%;
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+/* Left Panel */
+main .left {
+  flex-basis: 50%;
+  position: relative;
+  border-radius: 0.7rem;
+  background-color: #1e1e1e; /* dark bg */
+  overflow: hidden;
+}
+
+.left .code {
+  height: 100%;
+  width: 100%;
+}
+
+/* Editor code box */
+.react-simple-code-editor {
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  font-size: 16px;
+  background-color: #1e1e1e;
+  color: #f8f8f2;
+  outline: none;
+}
+
+/* Prism syntax highlighting */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #999988;
+  font-style: italic;
+}
+
+.token.punctuation {
+  color: #f8f8f2;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+  color: #ae81ff;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: #f8f8f2;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #66d9ef;
+}
+
+.token.function,
+.token.class-name {
+  color: #e6db74;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+  color: #fd971f;
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+/* Review button */
+main .left .review {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: rgb(147, 147, 178);
+  color: black;
+  padding: 0.5rem 2rem;
+  border-radius: 0.7rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Right Panel */
+main .right {
+  flex-basis: 50%;
+  background-color: #343434;
+  border-radius: 0.7rem;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  color: #ffffff;
+  overflow: auto;
+  white-space: pre-wrap;
+}
+
+/* Markdown rendered code block */
+main .right pre {
+  background: #2d2d2d;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+}
+
+main .right code {
+  font-family: 'Fira Code', monospace;
+  font-size: 1rem;
+  color: #f8f8f2;
+}
+
+
+
+
+
+
+
+
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html , body ,
+#root{
+  height: 100%;
+  width: 100%;
+}
+main{
+  height: 100%;
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+main .left, 
+main .right{
+  height: 100%;
+  flex-basis: 50%;
+  border-radius: 0.7rem;
+}
+main .left{
+  background-color: black;
+  position: relative;
+}
+
+
+ .left .code,
+.code pre,
+.code pre code{
+  height: 100%;
+  width: 100%;
+  margin:0;
+  border-radius: 0.7rem;
+}
+
+
+main .left .review{
+  position: absolute;
+  bottom:1rem ;
+  right : 1rem;
+  background-color:rgb(147, 147, 178) ;
+  color: black;
+  padding: 0.5rem 2rem;
+  border-radius: 0.7rem;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: 0.7rem;
+}
+main .right{
+  background-color: #343434;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  overflow: auto;
+} */
