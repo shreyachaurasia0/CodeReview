@@ -1,6 +1,17 @@
 require('dotenv').config();
-const app = require('./src/app')
+const path = require('path');
+const express = require('express');
+const app = require('./src/app');
 
-app.listen(3000 , ()=>{
-    console.log('Server is running on http://localhost:3000/')
-})
+// Serve frontend static files
+const frontendPath = path.join(__dirname, '../Frontend/dist');
+app.use(express.static(frontendPath));
+
+// Fallback for SPA (React Router)
+app.get('*', (req, res) => {
+  res.sendFile(path.join(frontendPath, 'index.html'));
+});
+
+app.listen(3000, () => {
+  console.log('Server is running on http://localhost:3000/');
+});
